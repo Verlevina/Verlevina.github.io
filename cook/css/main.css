@@ -1,0 +1,945 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    background-color: #ffffff;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: center;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+div.wrapper {
+    position: relative;
+    background-color: #ffffff;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1200px;
+}
+/*header  */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.logo {
+    margin-left: 6%;
+    height: 105px;
+    display: inline-block;
+}
+header div.contacts {
+    display: block;
+    margin: auto;
+}
+
+
+/*navigation*/
+nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0 0 0 6%;
+}
+
+.navButton {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    line-height: 50px;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.navButton:hover {
+    background: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: inline-block;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    height: 103px;
+    margin: 2px 35px 0 0;
+    line-height: 105px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    /*   font-family: "GentiumBookBasic";*/
+    font-weight: bold;
+}
+
+.active, nav ul li:hover {
+    border-top: 2px solid #ffffff;
+    margin-top: 0;
+}
+
+
+section {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*promo*/
+section.promo {
+    background: url(../img/contentBg1_01.jpg) 50% 0 no-repeat black;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+section.promo h2 {
+    margin: 0;
+    font-size: 90px;
+    padding-top: 240px;
+    /*font-family: "YesevaOne";*/
+    color: rgba(255, 255, 255, 0.922);
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(1, 1, 1, 0.64);
+
+}
+input[type=button],
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 50px;
+    margin: 25px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-size: 18px;
+    /*font-family: "Lato";*/
+    color: white;
+    line-height: 1.2;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+input[type=button]:hover,
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    color: black;
+}
+/*about*/
+section.about div.mainCook {
+    width: 100%;
+}
+
+section.about div.cook {
+    width: 300px;
+}
+
+section.about {
+    padding: 100px 0;
+    line-height: 700px;
+    background: blanchedalmond;
+    -webkit-box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.14);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.14);
+}
+
+.contacts {
+    display: inline-block;
+    font-size: 21px;
+    color: rgb(218, 179, 62);
+    line-height: 1.2;
+    width: 81px;
+    height: 21px;
+    margin-left: -20px;
+}
+
+.divider {
+    margin: 25px auto;
+}
+
+/*menu*/
+section.menu > div:after {
+    display: table;
+    content: '';
+    clear: none;
+}
+
+.about > .mainCook {
+    margin: auto;
+    line-height: normal;
+    min-width: 1000px;
+}
+
+.about .cook {
+
+    width: 430px;
+    line-height: normal;
+    display: inline-block;
+    color: black;
+}
+
+.about > .cook > h2 {
+    font-size: 36px;
+    font-family: "YesevaOne";
+    color: rgb(204, 153, 0);
+}
+
+img.dish {
+    width: 621px;
+    height: 625px;
+    vertical-align: top;
+
+}
+
+.cookContainer {
+    text-align: right;
+}
+/*ingredients*/
+section.ingredients {
+    height: 560px;
+    background: url(../img/ingredientsBG.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+
+section.ingredients > .ingredientsText {
+    background: url(../img/cookTextBg.png) center 380px no-repeat rgba(0, 0, 0, 0.5);
+    width: 420px;
+    height: 420px;
+    margin-right: 50px;
+    padding: 70px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+section.ingredients > .ingredientsText > h2 {
+    font-size: 36px;
+    font-family: "YesevaOne";
+    line-height: 1.2;
+    text-align: center;
+}
+
+section.ingredients > .ingredientsText p {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 140px;
+    width: 430px;
+}
+
+section.ingredients > .ingredientsText > p, section.ingredients > .ingredientsText ul {
+    text-align: center;
+}
+
+section.ingredients > .ingredientsText li {
+    font-size: 12px;
+    font-family: "FontAwesome";
+    color: rgb(255, 255, 255);
+    line-height: 2;
+    text-align: left;
+}
+/*menu*/
+section.menu {
+    padding: 100px 0;
+    background: url(../img/menuBg.png) no-repeat;
+    background-size: cover;
+}
+
+section.menu > div {
+    margin: auto;
+    max-width: 1030px;
+}
+
+section.menu .firstMenu, section.menu .secondMenu {
+    display: inline-block;
+    width: 440px;
+    margin: 0 30px;
+}
+
+section.menu h3 {
+    font-size: 30px;
+    font-family: "YesevaOne";
+    color: rgb(204, 153, 0);
+    line-height: 0.667;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.menuContainer span {
+    float: left;
+    font-size: 18px;
+    font-family: "YesevaOne";
+    color: rgb(200, 159, 45);
+    line-height: 1.143;
+    text-align: left;
+}
+
+.menuContainer strong {
+    float: right;
+    font-size: 17px;
+    font-family: "YesevaOne";
+    color: rgb(200, 159, 45);
+    line-height: 1.143;
+    text-align: left;
+}
+
+div.content {
+    max-width: 430px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+div.content:first-child {
+    margin-top: 0;
+}
+
+div.content div.item {
+    margin-top: 30px;
+}
+
+div.content div:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.menuContainer div.small {
+    color: black;
+    text-align: left;
+}
+/*review*/
+section.reviews {
+    background: url(../img/reviewBg.jpg) 50% 0 no-repeat;
+    padding: 100px 0;
+    background-size: cover;
+}
+
+section .reviewText {
+    min-height: 420px;
+    max-width: 570px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 70px 100px;
+}
+
+section .reviewText h3 {
+    font-size: 36px;
+    font-family: "YesevaOne";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    margin: 20px;
+}
+
+section .reviewText div {
+    font-size: 25px;
+    font-family: "GentiumBookBasic";
+    color: rgb(221, 224, 223);
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: center;
+}
+section div.commas {
+    height: 45px;
+    width: 40px;
+    background: url("../img/commas.png") top no-repeat;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+}
+
+.quot {
+    position: relative;
+}
+
+/*reservation*/
+section.reservation {
+    background: url('../img/reservationBg.jpg') 50% 0 no-repeat;
+    background-size: cover;
+    padding: 130px 0;
+}
+
+section.reservation > div {
+    margin: auto;
+}
+
+section.reservation div.reservImage {
+    display: inline-block;
+    width: 570px;
+    height: 500px;
+}
+
+section.reservation div.reserv {
+    display: inline-block;
+    margin-left: 100px;
+    width: 430px;
+    height: 500px;
+    text-align: center;
+}
+
+.reserv p {
+    font-size: 16px;
+    font-family: "Lato";
+    color: rgb(76, 76, 76);
+    line-height: 1.5;
+    text-align: center;
+}
+
+section.reservation div.reserv h2 {
+    font-size: 36px;
+    font-family: "YesevaOne";
+    color: rgb(204, 153, 0);
+    text-align: center;
+    margin-top: 0;
+}
+
+.firstReservImage {
+    height: 100%;
+    width: 270px;
+    background-image: url('../img/firstReservImage.png');
+    float: left;
+}
+
+.secondReservImage {
+    height: 100%;
+    width: 270px;
+    float: right;
+    background-image: url('../img/secondReservImage.jpg');
+}
+
+.reserv input {
+    width: 200px;
+    height: 36px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    padding: 1px 0  1px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 12px;
+
+}
+
+
+.reserv input:hover {
+    border: 1px solid rgb(201, 161, 49);
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+.reserv span {
+    font-size: 14px;
+    font-family: "OpenSans";
+    color: rgb(201, 161, 49);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.placeholder {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(124, 124, 124);
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+}
+
+form {
+    text-align: center;
+}
+
+form .firstForm {
+    float: left;
+}
+
+form .secondForm {
+    float: right;
+}
+
+input[type=submit] {
+    background: rgb(201, 161, 49);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+input[type=date] {
+    height: 36px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    position: static;
+}
+
+
+.inputButton {
+    text-align: center;
+    margin-top: 5px;
+}
+
+form > div:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*footer*/
+
+footer {
+    min-height: 320px;
+    background: #191919;
+    padding: 50px 0;
+}
+
+footer > div {
+    margin: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+
+.flex-item1 {
+    width: 370px;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.flex-item2 {
+    width: 230px;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.flex-item3 {
+    width: 230px;
+    height: 100%;
+    margin: 0 20px;
+}
+
+footer img {
+    width: 230px;
+}
+
+footer p {
+    margin-bottom: 20px
+}
+
+footer div.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 120px;
+    margin: auto;
+}
+
+footer div.cards div {
+    width: 20px;
+    height: 15px;
+}
+
+footer div.cards div:nth-child(1) {
+    background: url('../img/cards.png');
+    background-position: 0 0;
+}
+
+footer div.cards div:nth-child(2) {
+    background: url('../img/cards.png');
+    background-position: -33px 0;
+}
+
+footer div.cards div:nth-child(3) {
+    background: url('../img/cards.png');
+    background-position: -66px 0;
+}
+
+footer div.cards div:nth-child(4) {
+    background: url('../img/cards.png');
+    background-position: -99px 0;
+}
+
+footer div.cards div a {
+    display: block;
+    height: 100%;
+}
+
+footer div.social div a {
+    display: block;
+    height: 100%;
+}
+
+footer div.social div {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+footer div.social div:nth-child(1) {
+    background: url('../img/social.jpg');
+    background-position: 0 0;
+}
+
+footer div.social div:nth-child(2) {
+    background: url('../img/social.jpg');
+    background-position: -25px 0;
+}
+
+footer div.social div:nth-child(3) {
+    background: url('../img/social.jpg');
+    background-position: -50px 0;
+}
+
+footer div.social div:nth-child(4) {
+    background: url('../img/social.jpg');
+    background-position: -79px 0;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c69a4b;
+    margin: 1em 0;
+    padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(-o-min-device-pixel-ratio: 5/4),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    div.wrapper {
+        min-width: auto;
+    }
+
+    header{
+        position: fixed;
+    }
+    section.promo h2 {
+        font-size: 60px;
+        padding-top: 220px;
+    }
+
+    nav {
+        margin: auto;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+
+    img.dish {
+        display: none;
+    }
+
+    .about > .mainCook {
+        width: inherit;
+        margin: auto;
+        min-width: inherit;
+    }
+
+    section.ingredients > .ingredientsText {
+        margin: auto;
+    }
+
+    section.reservation div .reserv {
+        margin: 0 20px;
+
+    }
+
+    footer {
+        padding: 30px 10px;
+
+        height: auto;
+    }
+
+    footer > div {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 980px) {
+    .logo {
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        margin-left: -94px;
+        margin-bottom:20px;
+    }
+    header{
+        position:absolute;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+}

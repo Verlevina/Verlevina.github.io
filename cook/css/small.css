@@ -1,0 +1,207 @@
+div.wrapper {
+    width: 100%;
+    min-width: auto;
+}
+body{
+    position:relative;
+}
+header {
+    width: 100%;
+    background-size: auto;
+    background-repeat: repeat-y;
+    text-align: center;
+    position:absolute;
+}
+
+.logo {
+    margin: 0;
+}
+
+.navButton {
+    display: block;
+}
+
+section.promo h2 {
+    font-size: 3em;
+    padding-top: 100px;
+}
+
+input[type='button'] {
+    margin: 10px;
+    width: 160px;
+    padding: 10px;
+}
+
+section.about div.cook {
+    padding: 10px;
+    width: auto;
+}
+
+section.about div.mainCook{
+    width: inherit;
+    margin: auto;
+    min-width: inherit;
+    max-width: 420px;
+}
+
+div.mainCook > div.cook {
+    padding: 10px;
+}
+
+section.ingredients, section.reviews {
+    height: auto;
+    position: inherit;
+}
+
+section.about img.dish {
+    display: none;
+}
+
+section.ingredients div.ingredientsText, section.reviews div.reviewText {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+section.ingredients div.ingredientsText {
+    background-position: bottom;
+    position: inherit;
+}
+
+section.ingredients div.ingredientsText p {
+    padding: 10px;
+    width: auto;
+    position: inherit;
+}
+
+section.reviews div.quot {
+    position: static;
+}
+
+section.menu {
+    width: 100%;
+}
+
+section.menu div.firstMenu, section.menu div.secondMenu {
+    width: auto;
+    padding: 10px;
+    margin: 0;
+}
+
+section.menu div.firstMenu > article, section.menu div.secondMenu > article {
+    width: auto;
+    margin: 0;
+    padding: 10px 0;
+}
+
+section.reviews div.reviews {
+    padding: 0;
+    margin: 0;
+}
+
+section.review div.quot > h3 {
+    font-size: 2em;
+}
+
+section .reviewText div {
+    font-size: 15px;
+    padding: 10px;
+}
+
+section.reservation div.reservImage {
+    width: auto;
+    height: auto;
+}
+
+.firstReservImage, .secondReservImage {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.reservation div.reserv {
+
+    margin: 0;
+    width: auto;
+    height: auto;
+}
+
+section.reservation form div {
+    text-align: center;
+}
+
+section.reservation form div.firstForm, section.reservation form div.secondForm {
+    float: none;
+    margin: 0;
+}
+
+section.reservation form br {
+    height: 0;
+}
+
+form input[type="submit"] {
+    margin-top: 20px;
+}
+
+div.flex {
+    margin: auto;
+}
+
+/*класс для управления навигацией*/
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+nav > ul {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+nav > ul li {
+    margin: 0;
+}
+
+nav > ul li a {
+    margin-bottom: 2px;
+    padding: 3px 0;
+    line-height: 15px;
+    height: auto;
+}
+
+nav > ul > li:hover {
+    border: none;
+}
+
+nav > ul > li a:hover {
+    border-top: none;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.active {
+    border-top: none;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 0;
+    margin-top: 0;
+}
